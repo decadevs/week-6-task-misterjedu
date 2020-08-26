@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:id="@+id/profile_activity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+
+        <ImageView
+            android:id="@+id/profile_background"
+            android:layout_width="411dp"
+            android:layout_height="327dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile_background" />
+
+        <ImageView
+            android:id="@+id/profile_user_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="68dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_pin_24"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/profile_welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profile_user_image"
+            app:layout_constraintTop_toTopOf="@+id/profile_user_image" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/profile_name"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/profile_welcome_text"
+            app:layout_constraintTop_toBottomOf="@+id/profile_welcome_text" />
+
+        <TextView
+            android:id="@+id/profile_phone_number_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/profile_phone_number"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/your_profile_information" />
+
+        <TextView
+            android:id="@+id/profile_email_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/email_profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/profile_phone_number_key"
+            app:layout_constraintTop_toBottomOf="@+id/profile_phone_number_key" />
+
+        <TextView
+            android:id="@+id/profile_gender_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/profile_gender"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/profile_email_key"
+            app:layout_constraintTop_toBottomOf="@+id/profile_email_key" />
+
+        <TextView
+            android:id="@+id/your_profile_information"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/your_information"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_background" />
+
+        <TextView
+            android:id="@+id/phone_number_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/placeholder"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/profile_phone_number_key"
+            app:layout_constraintTop_toTopOf="@+id/profile_phone_number_key" />
+
+        <TextView
+            android:id="@+id/profile_email-address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:text="@string/placeholder"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/profile_email_key"
+            app:layout_constraintTop_toTopOf="@+id/profile_email_key" />
+
+        <TextView
+            android:id="@+id/profile_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:lineSpacingExtra="18sp"
+            android:text="@string/placeholder"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/profile_gender_key"
+            app:layout_constraintTop_toTopOf="@+id/profile_gender_key" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
