@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Week6Assignment</string>
+    <string name="terms_conditions"><![CDATA[I have accepted the Terms and & Condition]]></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name_hint">Enter Full Name</string>
+    <string name="number_hint">Enter Phone Number</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="welcome">Welcome</string>
+    <string name="profile_name">User Name</string>
+    <string name="profile_phone_number">Phone Number :</string>
+    <string name="your_information">Your Profile Information</string>
+    <string name="email_profile">Your Email : </string>
+    <string name="profile_gender">Your Gender : </string>
+    <string name="placeholder">Placeholder</string>
+    <string name="sign_up_page">Sign Up Page</string>
+
+
+    <string-array name="gender_array">
+        <item>Choose Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>
